@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    color: #3000ff;
 }
 
 .nav {
@@ -33,15 +34,21 @@ body{
     margin-left: 20px;
 }
 
-#textarea-box{
-    overflow: hidden;
-    width: 279px;
-    height: 82px;
-    text-align: center;
-    padding: 70px 167px;
-    align-items: center;
-    justify-content: center;
+a:hover , #btn:hover{
+    background-color: #261197;
+    color: #fcd34d;
+    border-radius: 17px;
+    border: 2px solid;
+    padding: 10px 20px;
 }
+
+a , .footer-heading , .heading{
+    font-size: larger;
+    font-weight: bolder;
+    color: #3000ff;
+}s
+
+
 
 .center{
     text-align: center;
@@ -88,6 +95,29 @@ footer ul li {
     text-align: center;  
 }
 
+#textarea-box{
+    overflow: hidden;
+    /* width: 279px; */
+    height: 82px;
+    text-align: center;
+    padding: 70px 167px;
+    align-items: center;
+    justify-content: center;
+}
+
 footer p {
     font-weight: bold;
 }
+
+@media screen and (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #textarea-box{
+    width: 41vw;
+    height: 41vh;
+    padding: 0;
+    }
+  }
