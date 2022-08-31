@@ -13,6 +13,7 @@ var serverUrl = "https://api.funtranslations.com/translate/groot.json"
 btn.addEventListener('click' , clickEventHandler)
 
 function errorHandler(error) {
+    alert("something went wrong please try again later" , error)
     console.log("error occured" , error)
     
 }
